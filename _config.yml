@@ -1,0 +1,18 @@
+title: Alex Cordeiro
+description: Engenheiro de dados. Azure, SAP BW e Python.
+url: https://alexcordeiro.dev
+baseurl: ""
+lang: pt-BR
+
+author:
+  name: Alex Cordeiro
+
+github_username: alxcord
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
