@@ -16,6 +16,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--body);
@@ -24,62 +25,74 @@ body {
 }
 
 .wrap {
-  max-width: 900px;
+  width: 100%;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 64px 48px;
 }
 
 .hero {
-  margin-bottom: 3rem;
+  margin-bottom: 48px;
 }
 
-.hero h1 {
+.hero h1,
+.name {
   font-family: var(--display);
-  font-size: clamp(3rem, 8vw, 6rem);
-  line-height: .95;
+  font-size: clamp(4rem, 10vw, 7rem);
+  line-height: 0.9;
+  letter-spacing: -0.06em;
   margin: 0;
-  letter-spacing: -0.05em;
 }
 
 .manifest {
-  margin-top: 2rem;
   border-top: 1px solid var(--line);
+  margin-bottom: 48px;
 }
 
 .manifest-item {
   display: flex;
-  padding: 0.8rem 0;
+  align-items: center;
+  gap: 32px;
+  padding: 20px 0;
   border-bottom: 1px solid var(--line);
-  gap: 2rem;
 }
 
 .manifest-label {
-  width: 120px;
+  min-width: 120px;
+  flex-shrink: 0;
   font-family: var(--mono);
+  font-size: 0.8rem;
   color: var(--muted);
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-size: .8rem;
 }
 
 .manifest-value {
   flex: 1;
+  font-size: 1.1rem;
 }
 
 h2 {
-  margin-top: 3rem;
+  margin-top: 64px;
+  margin-bottom: 20px;
   font-family: var(--mono);
-  font-size: .9rem;
-  letter-spacing: .15em;
-  text-transform: uppercase;
   color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+p,
+ul {
+  max-width: 760px;
 }
 
 ul {
-  padding-left: 1.2rem;
+  padding-left: 20px;
 }
 
 li {
-  margin-bottom: .5rem;
+  margin-bottom: 8px;
 }
 
 a {
@@ -92,20 +105,25 @@ a:hover {
 }
 
 footer {
-  margin-top: 4rem;
-  padding-top: 1.5rem;
+  margin-top: 80px;
+  padding-top: 24px;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: .85rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
+  .wrap {
+    padding: 40px 24px;
+  }
+
   .manifest-item {
     flex-direction: column;
-    gap: .4rem;
+    align-items: flex-start;
+    gap: 8px;
   }
 
   .manifest-label {
-    width: auto;
+    min-width: auto;
   }
 }
