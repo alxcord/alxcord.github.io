@@ -26,13 +26,13 @@ title: Alex Cordeiro
 
 ## Sobre
 
-Lider técnico Engenharia de dados e arquiteto corporativo de plataformas de dados, desenho de soluções de dados escalares, especializado na Stack Azure e Databricks. Background em SAP tendo trabalhado por anos com SAP BW nas mais diversas indústrias e cenários de negócio o que me dá bagagem para entender e discutir problemas de negócio e transformar em soluções tecnológicas.
+Líder técnico Engenharia de dados e arquiteto corporativo de plataformas de dados, desenho de soluções de dados escaláveis, especializado na Stack Azure e Databricks. Background em SAP tendo trabalhado por anos com SAP BW nas mais diversas indústrias e cenários de negócio o que me dá bagagem para entender e discutir problemas de negócio e transformar em soluções tecnológicas.
 
 ## O que eu faço
 
 - Arquitetura e construção de pipelines de dados em Azure
 - Desenho de soluções, arquitetura, desenho de sistemas
-- Arquitetura medalhão, administração Databricks/Unity Catalog, permissões, 
+- Arquitetura medalhão, administração Databricks/Unity Catalog, permissões
 
 ## Do que gosto
 
