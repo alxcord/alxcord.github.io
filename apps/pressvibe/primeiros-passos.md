@@ -58,5 +58,5 @@ O resultado aparece no rodapé da tela. Toque em **Detalhes** para ver o resulta
 
 ## Próximos passos
 
-Coloque o botão na tela inicial com o [Widget](../widget/). Para acompanhar a sua posição depois do alerta, ligue o [Ping](../ping/). Para não perder a configuração ao trocar de celular, faça um [Backup](../backup/).
+Coloque o botão na tela inicial com o [Widget](../widget/). Para mandar notificações periódicas depois do alerta, com a sua posição se você colocar a macro na mensagem, ligue o [Ping](../ping/). Para não perder a configuração ao trocar de celular, faça um [Backup](../backup/).
 {% endraw %}

@@ -40,6 +40,10 @@ Líder técnico Engenharia de dados e arquiteto corporativo de plataformas de da
 - Cozinhar
 - Video Games no que sobra de tempo :D
 
+## Apps
+
+- [PressVibe](/apps/pressvibe/): app Android que manda alertas capazes de tocar no celular de quem recebe mesmo no modo silencioso.
+
 ## Contato
 
 - [github.com/alxcord](https://github.com/alxcord)

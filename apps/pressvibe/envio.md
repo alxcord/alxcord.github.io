@@ -28,7 +28,7 @@ Durante um envio, o mesmo botão ignora novos acionamentos. Isso evita alertas d
 
 Falhas de conexão, tempo esgotado, limite de requisições do serviço e erros do servidor entram em novas tentativas. Erros de credencial e de dados inválidos não, porque tentar de novo não resolve.
 
-O app tenta de novo por até 2 horas a partir do acionamento. A espera entre tentativas começa em 5 segundos e dobra até 1 minuto. A mensagem que chega depois mantém os valores do momento do acionamento, como a hora e a posição.
+O app tenta de novo por até 2 horas a partir do acionamento. A espera entre tentativas começa em 5 segundos e dobra até 1 minuto. A mensagem que chega depois mantém os valores das macros no momento do acionamento. Se ela usa hora ou posição, quem recebe vê a hora e a posição de quando você acionou o botão.
 
 As tentativas continuam com o app fechado e depois de reiniciar o celular. Enquanto isso, o botão mostra "Tentando…" com um anel pulsante, e o Android mostra a notificação "Tentando enviar alerta".
 

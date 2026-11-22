@@ -1,14 +1,16 @@
 ---
 layout: guia
 title: Ping | PressVibe
-description: Notificações periódicas com a sua posição depois de um alerta do PressVibe.
+description: Notificações periódicas depois de um alerta do PressVibe.
 permalink: /apps/pressvibe/ping/
 ---
 {% raw %}
 
 # Ping
 
-O Ping continua enviando notificações de tempos em tempos depois do alerta, até você encerrar. Ele serve para quem recebe acompanhar onde você está, com a posição e a bateria atualizadas a cada envio.
+O Ping continua enviando notificações de tempos em tempos depois do alerta, até você encerrar. O uso mais comum é deixar quem recebe acompanhar onde você está.
+
+O Ping manda só o que está escrito nas mensagens dele. A posição e a bateria entram apenas se você colocar as macros `{{maps_url}}` e `{{battery}}` no texto. Sem informações que mudam a cada envio, um aviso periódico perde o sentido, então coloque essas macros nas mensagens do Ping.
 
 ## Como ligar
 
@@ -33,11 +35,11 @@ Bateria: {{battery}}% às {{time}}
 
 ## Como funciona
 
-O primeiro Ping sai um intervalo depois do alerta. A cada envio, o app lê de novo a posição, a bateria e a hora.
+O primeiro Ping sai um intervalo depois do alerta. A cada envio, o app resolve de novo as macros da mensagem. Se ela usa posição, bateria ou hora, esses valores saem atualizados.
 
 Enquanto o Ping está ativo, o botão mostra "Ping ativo" com um anel que pulsa devagar, e o rodapé da tela mostra quantos Pings estão rodando. O Ping continua mesmo com o app fechado.
 
-Se um envio de Ping falhar, o app não tenta de novo. O próximo Ping, com posição mais nova, toma o lugar dele.
+Se um envio de Ping falhar, o app não tenta de novo. O próximo Ping, com valores mais novos, toma o lugar dele.
 
 ## Como encerrar
 
@@ -50,4 +52,8 @@ Toque no botão com "Ping ativo" e confirme **Encerrar Ping**. Os destinos do Pi
 | Acabou a duração máxima | Ping encerrado: duração máxima atingida. |
 
 O Ping nunca roda sem prazo. No limite de tempo que você definiu, de no máximo 12 horas, ele para sozinho.
+
+## O Ping não é rastreamento contínuo
+
+O Ping envia a cada intervalo, de 1 minuto a 1 hora. Entre um envio e outro, quem recebe não sabe onde você está. Use o Ping como reforço e, numa situação de risco, compartilhe também a localização em tempo real pelo WhatsApp ou pelo Google Maps. O PressVibe depende de serviços de terceiros e não garante a entrega, então quanto mais canais, melhor.
 {% endraw %}

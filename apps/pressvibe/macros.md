@@ -10,6 +10,8 @@ permalink: /apps/pressvibe/macros/
 
 Macros são marcadores entre chaves duplas, como `{{time}}`. No momento do envio, o app troca cada macro pelo valor real. Elas funcionam no título, na mensagem e no corpo do webhook.
 
+O app só manda o que está escrito na mensagem. Data, hora, bateria e localização só entram se a macro correspondente estiver no texto.
+
 O app resolve as macros uma vez por acionamento. Todas as notificações do mesmo botão recebem os mesmos valores.
 
 ## Lista de macros

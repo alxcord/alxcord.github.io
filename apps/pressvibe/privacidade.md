@@ -63,7 +63,11 @@ Outros apps do seu aparelho, como o Tasker, só acionam o PressVibe se você lig
 
 O backup é um arquivo que você exporta e guarda onde quiser, cifrado com uma senha sua. O desenvolvedor não recebe esse arquivo nem a senha.
 
-## 8. Permissões
+## 8. Compra da versão premium
+
+A compra da versão premium é feita pela Google Play. A Google processa o pagamento conforme a política de privacidade dela. O desenvolvedor não recebe os dados do seu cartão. O app recebe da Google Play só a confirmação de que a compra foi feita, para liberar os recursos premium.
+
+## 9. Permissões
 
 | Permissão | Para que serve |
 |---|---|
@@ -74,22 +78,22 @@ O backup é um arquivo que você exporta e guarda onde quiser, cifrado com uma s
 | Localização em segundo plano | Preencher as macros de posição nos envios pelo widget, opcional |
 | Sem restrição de bateria | Manter as novas tentativas sem atraso, opcional |
 
-## 9. Compartilhamento
+## 10. Compartilhamento
 
 O desenvolvedor não compartilha dados, porque não os recebe. O único compartilhamento é o envio que você mesmo configura, descrito na seção 4.
 
-## 10. Crianças
+## 11. Crianças
 
 O app não é direcionado a menores de 13 anos. Como o app não coleta dados, não há tratamento de dados de crianças pelo desenvolvedor.
 
-## 11. Seus direitos
+## 12. Seus direitos
 
 Como o desenvolvedor não guarda dados seus, não há dados para acessar, corrigir ou excluir na nossa base. Você controla tudo no próprio aparelho. Para dúvidas ou para exercer qualquer direito previsto na Lei Geral de Proteção de Dados (Lei 13.709/2018), escreva para [support@alexcordeiro.dev](mailto:support@alexcordeiro.dev).
 
-## 12. Segurança
+## 13. Segurança
 
 As credenciais ficam cifradas no aparelho, com chave no Android Keystore. Os campos de credencial aparecem mascarados na tela. Todas as chamadas usam HTTPS. O histórico de envios não guarda credenciais.
 
-## 13. Mudanças nesta política
+## 14. Mudanças nesta política
 
 Se o app passar a tratar dados de outra forma, esta política será atualizada antes da nova versão e a data no topo será alterada.

@@ -36,5 +36,5 @@ O widget nunca abre o campo de texto, mesmo se o botão estiver no modo Prompt i
 
 Para as macros de GPS funcionarem pelo widget, conceda a permissão de localização **o tempo todo** em **Configurações > Permissões**. Sem ela, o widget usa a última posição conhecida pelo app ou envia "localização indisponível".
 
-> O PressVibe só lê a localização no momento de um envio, mesmo com a permissão "o tempo todo". Ele não rastreia você em segundo plano.
+> O PressVibe só lê a localização no momento de um envio cuja mensagem usa uma macro de posição, mesmo com a permissão "o tempo todo". Ele não rastreia você em segundo plano.
 {% endraw %}
