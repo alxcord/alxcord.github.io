@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<!-- Layout das páginas de guia de apps: trilha no topo, conteúdo e menu dos guias no rodapé -->
+<nav class="crumbs">
+  <a href="{{ '/' | relative_url }}">Alex Cordeiro</a>
+  <span>/</span>
+  <a href="{{ '/apps/pressvibe/' | relative_url }}">PressVibe</a>
+</nav>
+
+<article class="guide">
+  {{ content }}
+</article>
+
+<nav class="guide-nav">
+  <div class="manifest-label">Guias do PressVibe</div>
+  <ul>
+    {% for item in site.data.pressvibe %}
+      {% if item.url == page.url %}
+        <li class="current">{{ item.titulo }}</li>
+      {% else %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.titulo }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <p class="support">Dúvidas ou problemas: <a href="mailto:support@alexcordeiro.dev">support@alexcordeiro.dev</a></p>
+</nav>

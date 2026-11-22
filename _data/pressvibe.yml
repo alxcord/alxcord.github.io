@@ -1,0 +1,24 @@
+# Menu dos guias do PressVibe, na ordem de leitura.
+# Usado pelo layout _layouts/guia.html.
+- titulo: Visão geral
+  url: /apps/pressvibe/
+- titulo: Primeiros passos
+  url: /apps/pressvibe/primeiros-passos/
+- titulo: Destinos
+  url: /apps/pressvibe/destinos/
+- titulo: Botões e notificações
+  url: /apps/pressvibe/botoes/
+- titulo: Macros
+  url: /apps/pressvibe/macros/
+- titulo: Widget
+  url: /apps/pressvibe/widget/
+- titulo: Ping
+  url: /apps/pressvibe/ping/
+- titulo: Envio, erros e histórico
+  url: /apps/pressvibe/envio/
+- titulo: Automação com Tasker
+  url: /apps/pressvibe/automacao/
+- titulo: Backup
+  url: /apps/pressvibe/backup/
+- titulo: Privacidade
+  url: /apps/pressvibe/privacidade/
