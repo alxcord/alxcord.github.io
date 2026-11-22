@@ -4,6 +4,7 @@ title: Destinos | PressVibe
 description: Como configurar Pushover, ntfy, Telegram, Pushbullet, Simplepush e webhook no PressVibe.
 permalink: /apps/pressvibe/destinos/
 ---
+{% raw %}
 
 # Destinos
 
@@ -107,3 +108,4 @@ Authorization: Bearer seu-token-aqui
 ```
 
 Se a URL começar com `http://`, o app avisa que a mensagem e as credenciais vão trafegar sem criptografia e pede confirmação.
+{% endraw %}

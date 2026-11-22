@@ -4,6 +4,7 @@ title: Botões e notificações | PressVibe
 description: Aparência, modos de acionamento, notificações e prioridades dos botões do PressVibe.
 permalink: /apps/pressvibe/botoes/
 ---
+{% raw %}
 
 # Botões e notificações
 
@@ -82,3 +83,4 @@ Para parar a repetição pelo seu lado, abra **Configurações > Histórico** e 
 | 🆘 Preciso de ajuda | Toque e segura, 2 s | Pushover Emergência com `{{maps_url}}` e Telegram para o grupo da família |
 | ✅ Cheguei bem | Toque e segura, 0 s | ntfy Normal com `{{time}}` |
 | 🚗 Problema no carro | Prompt interativo | Pushover Alta com `{{input}}` e `{{maps_url}}` |
+{% endraw %}

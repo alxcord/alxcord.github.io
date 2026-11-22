@@ -4,6 +4,7 @@ title: Primeiros passos | PressVibe
 description: Configure o PressVibe e envie o primeiro alerta.
 permalink: /apps/pressvibe/primeiros-passos/
 ---
+{% raw %}
 
 # Primeiros passos
 
@@ -58,3 +59,4 @@ O resultado aparece no rodapé da tela. Toque em **Detalhes** para ver o resulta
 ## Próximos passos
 
 Coloque o botão na tela inicial com o [Widget](../widget/). Para acompanhar a sua posição depois do alerta, ligue o [Ping](../ping/). Para não perder a configuração ao trocar de celular, faça um [Backup](../backup/).
+{% endraw %}

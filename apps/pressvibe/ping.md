@@ -4,6 +4,7 @@ title: Ping | PressVibe
 description: Notificações periódicas com a sua posição depois de um alerta do PressVibe.
 permalink: /apps/pressvibe/ping/
 ---
+{% raw %}
 
 # Ping
 
@@ -49,3 +50,4 @@ Toque no botão com "Ping ativo" e confirme **Encerrar Ping**. Os destinos do Pi
 | Acabou a duração máxima | Ping encerrado: duração máxima atingida. |
 
 O Ping nunca roda sem prazo. No limite de tempo que você definiu, de no máximo 12 horas, ele para sozinho.
+{% endraw %}

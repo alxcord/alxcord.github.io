@@ -4,6 +4,7 @@ title: Macros | PressVibe
 description: Macros de data, hora, bateria, GPS e texto digitado nas mensagens do PressVibe.
 permalink: /apps/pressvibe/macros/
 ---
+{% raw %}
 
 # Macros
 
@@ -69,3 +70,4 @@ Prompt com contexto:
 {{input}}
 Enviado às {{time}} de {{maps_url}}
 ```
+{% endraw %}
