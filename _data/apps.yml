@@ -1,0 +1,8 @@
+# Apps com guias no site. A chave é o valor de "app:" no front matter das páginas
+# e também o nome do arquivo de menu em _data/ (ex.: imprinta -> _data/imprinta.yml).
+pressvibe:
+  nome: PressVibe
+  url: /apps/pressvibe/
+imprinta:
+  nome: Imprinta
+  url: /apps/imprinta/

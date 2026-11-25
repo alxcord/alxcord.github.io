@@ -1,11 +1,15 @@
 ---
 layout: default
 ---
-<!-- Layout das páginas de guia de apps: trilha no topo, conteúdo e menu dos guias no rodapé -->
+<!-- Layout das páginas de guia de apps: trilha no topo, conteúdo e menu dos guias no rodapé.
+     Cada página informa o app no front matter (app: imprinta). Sem isso, vale o PressVibe.
+     Nome e endereço de cada app ficam em _data/apps.yml; o menu, em _data/<app>.yml. -->
+{% assign app_id = page.app | default: "pressvibe" %}
+{% assign app = site.data.apps[app_id] %}
 <nav class="crumbs">
   <a href="{{ '/' | relative_url }}">Alex Cordeiro</a>
   <span>/</span>
-  <a href="{{ '/apps/pressvibe/' | relative_url }}">PressVibe</a>
+  <a href="{{ app.url | relative_url }}">{{ app.nome }}</a>
 </nav>
 
 <article class="guide">
@@ -13,9 +17,9 @@ layout: default
 </article>
 
 <nav class="guide-nav">
-  <div class="manifest-label">Guias do PressVibe</div>
+  <div class="manifest-label">Guias do {{ app.nome }}</div>
   <ul>
-    {% for item in site.data.pressvibe %}
+    {% for item in site.data[app_id] %}
       {% if item.url == page.url %}
         <li class="current">{{ item.titulo }}</li>
       {% else %}

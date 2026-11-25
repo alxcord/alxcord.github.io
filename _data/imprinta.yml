@@ -1,0 +1,18 @@
+# Menu dos guias do Imprinta, na ordem de leitura.
+# Usado pelo layout _layouts/guia.html.
+- titulo: Visão geral
+  url: /apps/imprinta/
+- titulo: Primeiros passos
+  url: /apps/imprinta/primeiros-passos/
+- titulo: Montar a etiqueta
+  url: /apps/imprinta/etiquetas/
+- titulo: Imprimir
+  url: /apps/imprinta/impressao/
+- titulo: Modelos
+  url: /apps/imprinta/modelos/
+- titulo: Variáveis e lote
+  url: /apps/imprinta/lote/
+- titulo: Backup e planilha
+  url: /apps/imprinta/backup/
+- titulo: Privacidade
+  url: /apps/imprinta/privacidade/

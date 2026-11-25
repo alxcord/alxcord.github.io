@@ -43,6 +43,7 @@ Líder técnico Engenharia de dados e arquiteto corporativo de plataformas de da
 ## Apps
 
 - [PressVibe](/apps/pressvibe/): app Android que manda alertas capazes de tocar no celular de quem recebe mesmo no modo silencioso.
+- [Imprinta](/apps/imprinta/): app Android que imprime etiquetas na Niimbot B1 a partir de um catálogo, com um toque.
 
 ## Contato
 
