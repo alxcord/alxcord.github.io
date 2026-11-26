@@ -49,7 +49,7 @@ O ntfy é gratuito e não pede cadastro. As mensagens vão para um tópico, e qu
 3. Preencha o **Tópico** com o mesmo nome.
 4. Se você usa servidor próprio, troque a URL. Se o tópico exige login, preencha o **Token de acesso**.
 
-Para o alerta de prioridade Emergência tocar com o celular no modo Não perturbe, quem recebe precisa liberar isso nas configurações de notificação do Android para o app ntfy.
+Para o alerta de prioridade Emergência tocar com o celular no silencioso, no vibrar ou no Não perturbe, quem recebe precisa ajustar o app ntfy. O passo a passo está em [ntfy tocando no silencioso](../ntfy-silencioso/).
 
 ## Telegram
 
