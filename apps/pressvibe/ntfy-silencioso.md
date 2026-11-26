@@ -32,7 +32,11 @@ Os nomes abaixo são os do app ntfy em português. Nas telas do Android, o texto
 3. Ligue **Entrega instantânea**. Sem ela, as mensagens chegam pelo Firebase e a entrega pode demorar. Com ela, o app mantém uma conexão aberta e o alerta chega na hora, com um consumo pequeno de bateria.
 4. Toque em **Mantenha o alerta para a prioridade mais alta** e escolha **Continuar alertando**. É a opção que faz o alerta tocar como despertador e repetir até ser dispensado.
 5. Ligue **Configuração de notificações personalizadas**. Assim os ajustes de som e Não perturbe valem só para este tópico.
-6. Toque em **Configurar configurações de notificação**. O Android abre a tela de notificações do ntfy, com uma categoria para cada prioridade do tópico. Entre em **Prioridade máxima** e confira:
+6. Toque em **Configurar configurações de notificação**. O Android abre a tela de notificações do ntfy. Ela tem um grupo de categorias para cada tópico assinado, com o nome ou o apelido do tópico como título, e uma categoria geral do app. Faça o ajuste na **Prioridade máxima dentro do grupo do tópico que você segue**. A Prioridade máxima da categoria geral não vale para esse tópico. No exemplo abaixo, o tópico tem o apelido "Alex prioritário".
+
+   ![Tela de notificações do ntfy no Android, com o grupo de categorias do tópico "Alex prioritário"](/assets/img/pressvibe/ntfy-categorias-topico.jpg)
+
+   Na **Prioridade máxima** do tópico, confira:
    - **Mostrar notificações** ligado
    - **Som** com um som do sistema. Com um arquivo de som personalizado, o ntfy não consegue tocar pelo canal de alarme e o alerta fica mudo no silencioso. É um problema conhecido do app ntfy.
    - a opção de ignorar ou sobrepor o **Não perturbe** ligada, se ela aparecer nessa tela. Em alguns aparelhos ela não aparece aqui, e o ajuste é feito no passo 7.
