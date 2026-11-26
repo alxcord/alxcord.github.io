@@ -34,7 +34,7 @@ Os nomes abaixo são os do app ntfy em português. Nas telas do Android, o texto
 5. Ligue **Configuração de notificações personalizadas**. Assim os ajustes de som e Não perturbe valem só para este tópico.
 6. Toque em **Configurar configurações de notificação**. O Android abre a tela de notificações do ntfy. Ela tem um grupo de categorias para cada tópico assinado, com o nome ou o apelido do tópico como título, e uma categoria geral do app. Faça o ajuste na **Prioridade máxima dentro do grupo do tópico que você segue**. A Prioridade máxima da categoria geral não vale para esse tópico. No exemplo abaixo, o tópico tem o apelido "Alex prioritário".
 
-   ![Tela de notificações do ntfy no Android, com o grupo de categorias do tópico "Alex prioritário"](/assets/img/pressvibe/ntfy-categorias-topico.jpg)
+   ![Tela de notificações do ntfy no Android, com o grupo de categorias do tópico "Alex prioritário"](/assets/img/pressvibe/ntfy-categorias-topico.jpg){: style="width:100%;max-width:280px"}
 
    Na **Prioridade máxima** do tópico, confira:
    - **Mostrar notificações** ligado
