@@ -7,7 +7,7 @@ permalink: /apps/pressvibe/privacidade/
 
 # Política de Privacidade
 
-Última atualização: 22 de novembro de 2026
+Última atualização: 25 de novembro de 2026
 
 Esta política explica quais dados o app PressVibe usa e como eles são tratados. O PressVibe é um app Android para pedir ajuda com rapidez. Você pressiona um botão e o app envia notificações push pelos serviços que você mesmo configura.
 
@@ -15,7 +15,7 @@ Esta política explica quais dados o app PressVibe usa e como eles são tratados
 
 Alex Cordeiro, desenvolvedor do PressVibe.
 
-Contato: [support@alexcordeiro.dev](mailto:support@alexcordeiro.dev)
+Contato: [support-pressvibe@alexcordeiro.dev](mailto:support-pressvibe@alexcordeiro.dev)
 
 ## 2. Resumo
 
@@ -88,7 +88,7 @@ O app não é direcionado a menores de 13 anos. Como o app não coleta dados, n�
 
 ## 12. Seus direitos
 
-Como o desenvolvedor não guarda dados seus, não há dados para acessar, corrigir ou excluir na nossa base. Você controla tudo no próprio aparelho. Para dúvidas ou para exercer qualquer direito previsto na Lei Geral de Proteção de Dados (Lei 13.709/2018), escreva para [support@alexcordeiro.dev](mailto:support@alexcordeiro.dev).
+Como o desenvolvedor não guarda dados seus, não há dados para acessar, corrigir ou excluir na nossa base. Você controla tudo no próprio aparelho. Para dúvidas ou para exercer qualquer direito previsto na Lei Geral de Proteção de Dados (Lei 13.709/2018), escreva para [support-pressvibe@alexcordeiro.dev](mailto:support-pressvibe@alexcordeiro.dev).
 
 ## 13. Segurança
 
