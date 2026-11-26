@@ -15,7 +15,7 @@ Com tudo configurado, o alerta de emergência toca como um despertador: usa o vo
 
 O Android controla o som de notificações e o som de alarmes de forma separada. No silencioso ou no vibrar, as notificações ficam mudas, mas o despertador continua tocando.
 
-O app ntfy tem a opção **Mantenha o alerta para a prioridade mais alta**. Com ela ligada, mensagens de prioridade máxima tocam pelo canal de alarme do Android, como um despertador, e repetem até a notificação ser dispensada.
+O app ntfy tem uma opção que faz as mensagens de prioridade máxima tocarem pelo canal de alarme do Android, como um despertador, e repetirem até a notificação ser dispensada.
 
 ## No PressVibe (quem envia)
 
@@ -23,16 +23,18 @@ Na notificação do botão, use o destino ntfy com a prioridade **Emergência**.
 
 ## No celular de quem recebe
 
+Os nomes abaixo são os que aparecem no app ntfy em português e num Android comum. O texto e o caminho dos menus mudam conforme o fabricante, a versão do Android e o idioma do aparelho. Se não achar uma opção com o mesmo nome, procure a de sentido parecido. A busca das Configurações do Android também ajuda: digite "Não perturbe", "Modos" ou "Bateria".
+
 1. Instale o app ntfy e assine o mesmo tópico configurado no destino do PressVibe.
 2. Abra o tópico, toque no menu e entre nas configurações da inscrição.
-3. Ligue **Configuração de notificações personalizadas**. Assim as opções abaixo valem só para este tópico e não mudam os outros.
-4. Toque em **Mantenha o alerta para a prioridade mais alta** e ative a opção.
-5. Toque em **Configurar configurações de notificação** (Ignorar o Não Perturbe, sons, etc.). O Android abre as configurações de notificação do tópico. Na categoria de prioridade máxima:
-   - ative **Ignorar o Não Perturbe**
+3. Ligue **Configuração de notificações personalizadas** (em inglês, *Custom notification settings*). Assim as opções abaixo valem só para este tópico e não mudam os outros.
+4. Ative **Mantenha o alerta para a prioridade mais alta** (em inglês, *Keep alerting for highest priority*). É a opção que faz o alerta tocar como despertador.
+5. Toque em **Configurar configurações de notificação**, a opção descrita como "Ignorar o Não Perturbe, sons, etc.". O Android abre as configurações de notificação do tópico. Na categoria de prioridade máxima:
+   - ative a opção de ignorar ou sobrepor o **Não perturbe**
    - deixe o som em um **som do sistema**. Com um arquivo de som personalizado, o ntfy não consegue tocar pelo canal de alarme e o alerta fica mudo no silencioso. É um problema conhecido do app ntfy.
-6. Nas configurações do Android, abra o Não perturbe (em alguns celulares, Modos) e confira se os **alarmes** estão permitidos.
+6. Nas configurações do Android, abra o Não perturbe (em alguns celulares, Modos, Foco ou Modo silencioso) e confira se os **alarmes** estão permitidos.
 7. Deixe o **volume do alarme** alto. É ele que controla o volume do alerta, e não o volume de notificação ou de toque.
-8. Desative a otimização de bateria do ntfy: Configurações do Android, Apps, ntfy, Bateria, **Sem restrições**. Assim o Android não atrasa a entrega com a tela desligada.
+8. Tire o ntfy da otimização de bateria. No Android padrão, o caminho é Configurações, Apps, ntfy, Bateria, **Sem restrições**. Em outros aparelhos a opção pode se chamar "Não otimizar", "Permitir atividade em segundo plano" ou algo parecido. Assim o Android não atrasa a entrega com a tela desligada.
 
 ## Teste antes de precisar
 
