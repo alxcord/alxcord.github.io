@@ -28,11 +28,18 @@ Os nomes abaixo são os do app ntfy em português. Nas telas do Android, o texto
 ### No app ntfy
 
 1. Instale o app ntfy e assine o mesmo tópico configurado no destino do PressVibe.
-2. Abra o tópico, toque no menu e entre nas configurações da inscrição.
+2. Abra o tópico, toque no menu e entre nas configurações da inscrição. A tela fica assim, já com os ajustes dos passos 3 a 5:
+
+   ![Configurações da inscrição no app ntfy, com Entrega instantânea e Configuração de notificações personalizadas ligadas](/assets/img/pressvibe/ntfy-inscricao-config.jpg){: style="width:100%;max-width:280px"}
+
 3. Ligue **Entrega instantânea**. Sem ela, as mensagens chegam pelo Firebase e a entrega pode demorar. Com ela, o app mantém uma conexão aberta e o alerta chega na hora, com um consumo pequeno de bateria.
 4. Toque em **Mantenha o alerta para a prioridade mais alta** e escolha **Continuar alertando**. É a opção que faz o alerta tocar como despertador e repetir até ser dispensado.
 5. Ligue **Configuração de notificações personalizadas**. Assim os ajustes de som e Não perturbe valem só para este tópico.
 6. Toque em **Configurar configurações de notificação**. O Android abre a tela de notificações do ntfy. Ela tem um grupo de categorias para cada tópico assinado, com o nome ou o apelido do tópico como título, e uma categoria geral do app. Faça o ajuste na **Prioridade máxima dentro do grupo do tópico que você segue**. A Prioridade máxima da categoria geral não vale para esse tópico. No exemplo abaixo, o tópico tem o apelido "Alex prioritário".
+
+   O apelido é o **Nome de exibição**, definido mais abaixo nas configurações da inscrição, na seção Aparência. Dê um nome fácil de reconhecer ao tópico antes deste passo, para achar o grupo certo na tela do Android.
+
+   ![Seção Aparência das configurações da inscrição, com o Nome de exibição "Alex prioritário"](/assets/img/pressvibe/ntfy-inscricao-nome.jpg){: style="width:100%;max-width:280px"}
 
    ![Tela de notificações do ntfy no Android, com o grupo de categorias do tópico "Alex prioritário"](/assets/img/pressvibe/ntfy-categorias-topico.jpg){: style="width:100%;max-width:280px"}
 
