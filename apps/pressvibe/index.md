@@ -68,6 +68,7 @@ Comece pelos [Primeiros passos](primeiros-passos/). Depois, use os guias conform
 
 - [Primeiros passos](primeiros-passos/): do primeiro destino ao primeiro alerta, em 5 minutos.
 - [Destinos](destinos/): como obter as credenciais de cada serviço.
+- [Pushover tocando no silencioso](pushover-silencioso/): como quem recebe configura o app Pushover para o alerta tocar como alarme.
 - [ntfy tocando no silencioso](ntfy-silencioso/): como quem recebe configura o app ntfy para o alerta tocar como despertador.
 - [Botões e notificações](botoes/): aparência, modos de acionamento e prioridades.
 - [Macros](macros/): data, hora, bateria, GPS e texto digitado na mensagem.

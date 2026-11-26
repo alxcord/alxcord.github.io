@@ -38,7 +38,7 @@ O Pushover tem o recurso mais forte para emergência: a prioridade Emergência r
 
 Para avisar várias pessoas de uma vez, crie um grupo de entrega no Pushover e use a chave do grupo no lugar da User Key.
 
-No app Pushover de quem recebe, confira nas configurações se os alertas de alta prioridade e de emergência podem tocar com o celular em silêncio.
+Para o alerta de prioridade Alta ou Emergência tocar com o celular no silencioso, no vibrar ou no Não perturbe, quem recebe precisa ajustar o app Pushover. O passo a passo está em [Pushover tocando no silencioso](../pushover-silencioso/).
 
 ## ntfy
 

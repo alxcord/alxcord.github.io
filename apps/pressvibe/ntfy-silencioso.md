@@ -64,6 +64,6 @@ Faça o teste com o botão real, com prioridade Emergência, em três situaçõe
 | Vibrar | Toca no volume do alarme |
 | Silencioso ou Não perturbe | Toca no volume do alarme |
 
-Se não tocar em alguma delas, revise os passos 4 a 8. Alguns fabricantes alteram o comportamento do som de alarme. Se o seu celular for um desses, use também o Pushover no mesmo botão, como recomendado no [guia inicial](../).
+Se não tocar em alguma delas, revise os passos 4 a 8. Alguns fabricantes alteram o comportamento do som de alarme. Se o seu celular for um desses, use também o Pushover no mesmo botão. Veja [Pushover tocando no silencioso](../pushover-silencioso/).
 
 Veja também: [Destinos](../destinos/) e [Botões e notificações](../botoes/).
