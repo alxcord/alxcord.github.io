@@ -67,6 +67,8 @@ https://api.telegram.org/botTOKEN/getUpdates
 
 Para avisar um grupo, adicione o bot ao grupo e mande uma mensagem lá. O Chat ID de um grupo começa com o sinal de menos.
 
+O passo a passo completo, com exemplos, erros comuns e o envio para grupos, está em [Criar o bot do Telegram](../telegram-bot/).
+
 ## Pushbullet
 
 1. Entre em [pushbullet.com](https://www.pushbullet.com) com a conta de quem vai receber.

@@ -70,6 +70,7 @@ Comece pelos [Primeiros passos](primeiros-passos/). Depois, use os guias conform
 - [Destinos](destinos/): como obter as credenciais de cada serviço.
 - [Pushover tocando no silencioso](pushover-silencioso/): como quem recebe configura o app Pushover para o alerta tocar como alarme.
 - [ntfy tocando no silencioso](ntfy-silencioso/): como quem recebe configura o app ntfy para o alerta tocar como despertador.
+- [Criar o bot do Telegram](telegram-bot/): token, Chat ID e envio para grupos.
 - [Botões e notificações](botoes/): aparência, modos de acionamento e prioridades.
 - [Macros](macros/): data, hora, bateria, GPS e texto digitado na mensagem.
 - [Widget](widget/): o botão na tela inicial.
