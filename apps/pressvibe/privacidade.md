@@ -33,15 +33,13 @@ Para apagar esses dados, desinstale o app ou limpe os dados dele nas configuraç
 
 Quando você aciona um botão, o app envia a mensagem para o serviço que você escolheu. A mensagem contém o título e o texto que você definiu e, se você usar macros, valores como data, hora, nível de bateria, o texto que você digitou e a localização.
 
-Os serviços aceitos são Pushover, ntfy, Telegram, Pushbullet, Simplepush e webhook customizado. O envio vai direto do seu aparelho para o serviço, por HTTPS. No webhook customizado, o app pede sua confirmação antes de usar HTTP sem cifragem.
+Os serviços aceitos são Pushover, ntfy, Telegram e webhook customizado. O envio vai direto do seu aparelho para o serviço, por HTTPS. No webhook customizado, o app pede sua confirmação antes de usar HTTP sem cifragem.
 
 O desenvolvedor não participa desse caminho e não tem acesso às mensagens. Cada serviço trata os dados conforme a própria política de privacidade:
 
 - Pushover: [pushover.net/privacy](https://pushover.net/privacy)
 - ntfy: [ntfy.sh/docs/privacy](https://ntfy.sh/docs/privacy/)
 - Telegram: [telegram.org/privacy](https://telegram.org/privacy)
-- Pushbullet: [pushbullet.com/privacy](https://www.pushbullet.com/privacy)
-- Simplepush: [simplepush.io](https://simplepush.io)
 
 No ntfy e no webhook customizado, você pode usar um servidor seu. Nesse caso, quem trata os dados é você.
 

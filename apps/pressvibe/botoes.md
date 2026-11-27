@@ -10,6 +10,10 @@ permalink: /apps/pressvibe/botoes/
 
 Os botões ficam na tela principal. Cada botão tem uma aparência, um modo de acionamento e uma lista de notificações. Para gerenciar, abra **Configurações > Botões**. Ali você cria, edita, duplica, exclui e muda a ordem com **Mover para cima** e **Mover para baixo**. O app aceita até 12 botões.
 
+![Lista de botões com Estacionei, msg. prioritária e socorro, cada um com tamanho, modo de interação e número de notificações](/assets/img/pressvibe/botoes-lista.jpg){: style="width:100%;max-width:280px"}
+
+A lista mostra, para cada botão, o tamanho, o modo de acionamento e quantas notificações ele tem.
+
 ## Aparência
 
 | Campo | Opções |
@@ -22,6 +26,10 @@ Os botões ficam na tela principal. Cada botão tem uma aparência, um modo de a
 O botão precisa de nome, de ícone ou dos dois.
 
 Os botões são redondos e ficam em uma grade de uma ou duas colunas, na ordem que você definiu. Dois botões seguidos do mesmo tamanho dividem a linha. Um botão Grande ocupa a linha sozinho. Com muitos botões, a tela rola.
+
+![Tela Editar botão, com a prévia do botão no topo, seguida de nome, ícone, cor, tamanho e interação](/assets/img/pressvibe/botao-editar.jpg){: style="width:100%;max-width:280px"}
+
+O topo da tela de edição mostra como o botão vai ficar.
 
 Se você girar o celular, a grade não muda de lugar. Só o ícone e o nome de cada botão giram para ficar de pé. Assim você acha o botão no mesmo lugar sempre.
 
@@ -43,6 +51,10 @@ Use esse modo quando o contexto importa, como "Pneu furou na estrada" ou "Atrase
 
 Cada notificação é um envio. Um botão pode ter várias, para avisar pessoas diferentes ou usar serviços diferentes ao mesmo tempo. Todas saem em paralelo, e a falha de uma não impede as outras.
 
+Na tela do botão, **Adicionar notificação** cria um envio para um destino já cadastrado. **Adicionar destino** cadastra um destino novo sem sair do botão. O menu de cada notificação permite editar ou excluir.
+
+![Parte de baixo da tela Editar botão, com uma notificação do destino Pushover família, os botões Adicionar notificação e Adicionar destino e a chave do Ping](/assets/img/pressvibe/botao-notificacoes.jpg){: style="width:100%;max-width:280px"}
+
 | Campo | Observação |
 |---|---|
 | Destino | Um dos [destinos](../destinos/) cadastrados |
@@ -53,7 +65,9 @@ Cada notificação é um envio. Um botão pode ter várias, para avisar pessoas 
 | Tags | Só no ntfy. Separadas por vírgula. Tags com nome de emoji, como `warning`, viram ícone na notificação |
 | Ativa | Liga ou desliga a notificação sem apagar |
 
-A tela mostra uma **Prévia** do título e da mensagem com as macros resolvidas.
+A tela mostra uma **Prévia** do título e da mensagem com as macros resolvidas. A lista de macros rola para o lado.
+
+![Tela Notificação com destino Pushover família, título estacionei, mensagem com as macros lat, lon e maps_url, a prévia com a posição resolvida, prioridade, som e a chave Ativa](/assets/img/pressvibe/notificacao.jpg){: style="width:100%;max-width:280px"}
 
 ## Prioridades
 

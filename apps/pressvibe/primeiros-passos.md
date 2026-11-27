@@ -33,10 +33,12 @@ Para um app de emergência, conceda todas. Você revê as permissões depois em 
 
 1. Toque no ícone de engrenagem e abra **Destinos**.
 2. Toque em **+**.
-3. Dê um nome, por exemplo "ntfy da família", e escolha o serviço **ntfy**.
+3. Dê um nome, por exemplo "ntfy família", e escolha o serviço **ntfy**.
 4. Deixe a URL do servidor como está (`https://ntfy.sh`) e preencha o **Tópico** com o nome que você anotou.
 5. Toque em **Enviar teste**. A mensagem de teste deve chegar no outro celular.
 6. Toque em **Salvar**.
+
+![Tela Editar destino do ntfy, com nome, URL do servidor https://ntfy.sh, tópico e token de acesso opcional](/assets/img/pressvibe/destino-ntfy.jpg){: style="width:100%;max-width:280px"}
 
 ## 4. Crie o botão
 
@@ -44,11 +46,13 @@ Para um app de emergência, conceda todas. Você revê as permissões depois em 
 2. Toque em **+**.
 3. Escreva o nome "Preciso de ajuda", escolha o ícone 🆘 e a cor vermelha.
 4. Deixe a interação em **Toque e segura** e o tempo de acionamento em 2 segundos.
-5. Toque em **Adicionar notificação** e escolha o destino "ntfy da família".
+5. Toque em **Adicionar notificação** e escolha o destino "ntfy família". Se ainda não tiver o destino, **Adicionar destino** cadastra um sem sair do botão.
 6. No título, escreva `{{button}}`. Na mensagem, escreva `Preciso de ajuda. Estou aqui: {{maps_url}}`.
 7. Escolha a prioridade **Emergência** e salve.
 
-A tela de edição mostra uma prévia com as macros resolvidas. As macros estão explicadas em [Macros](../macros/).
+![Tela Editar botão, com a prévia do botão verde Estacionei, nome, ícones, cores, tamanho, interação e tempo de acionamento](/assets/img/pressvibe/botao-editar.jpg){: style="width:100%;max-width:280px"}
+
+A tela da notificação mostra uma prévia com as macros resolvidas. As macros estão explicadas em [Macros](../macros/).
 
 ## 5. Envie o primeiro alerta
 

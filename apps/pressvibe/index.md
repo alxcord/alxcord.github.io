@@ -9,7 +9,7 @@ permalink: /apps/pressvibe/
 
 O PressVibe nasceu de um problema comum: uma mensagem importante chega e ninguém vê, porque o celular de quem recebe está no silencioso. O app foi feito para quebrar essa barreira. Você segura um botão e ele manda alertas que, configurados com prioridade de emergência, tocam no celular de quem recebe mesmo no modo silencioso.
 
-Os alertas saem por serviços de notificação como Pushover, ntfy, Telegram, Pushbullet, Simplepush ou um webhook seu. O gesto de segurar o botão evita envios acidentais.
+Os alertas saem por serviços de notificação como Pushover, ntfy, Telegram ou um webhook seu. O gesto de segurar o botão evita envios acidentais.
 
 ## Leia antes de confiar uma emergência ao app
 
@@ -23,9 +23,15 @@ Numa situação de perigo, quanto mais canais, melhor. Siga estas recomendaçõe
 
 ## Como funciona
 
-O app trabalha com três peças. O **destino** é um serviço de envio com as suas credenciais, por exemplo "Pushover da família". O **botão** é o que você aperta na tela, com nome, ícone, cor e tamanho. A **notificação** liga um botão a um destino e define título, mensagem e prioridade.
+O app trabalha com três peças. O **destino** é um serviço de envio com as suas credenciais, por exemplo "Pushover família". O **botão** é o que você aperta na tela, com nome, ícone, cor e tamanho. A **notificação** liga um botão a um destino e define título, mensagem e prioridade.
 
-Um botão pode ter várias notificações, e um mesmo destino serve a vários botões. O conteúdo de cada mensagem é você quem define. Data, hora, bateria e localização só entram quando você coloca as [macros](macros/) correspondentes no texto.
+Um botão pode ter várias notificações, e um mesmo destino serve a vários botões.
+
+![Tela principal do PressVibe com três botões redondos: Estacionei em verde, msg. prioritária em amarelo e socorro em vermelho, maior](/assets/img/pressvibe/tela-principal.jpg){: style="width:100%;max-width:280px"}
+
+Tudo se configura pela engrenagem no canto da tela principal. A tela **Configurações** reúne botões, destinos, widget, automação, permissões, idioma, histórico e backup.
+
+![Tela Configurações do PressVibe, com Botões, Destinos, Botão do widget, Automação (Tasker), Permissões, Idioma, Histórico, Exportar e Importar configurações](/assets/img/pressvibe/configuracoes.jpg){: style="width:100%;max-width:280px"} O conteúdo de cada mensagem é você quem define. Data, hora, bateria e localização só entram quando você coloca as [macros](macros/) correspondentes no texto.
 
 ## Para que serve
 

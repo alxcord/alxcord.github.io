@@ -1,7 +1,7 @@
 ---
 layout: guia
 title: Destinos | PressVibe
-description: Como configurar Pushover, ntfy, Telegram, Pushbullet, Simplepush e webhook no PressVibe.
+description: Como configurar Pushover, ntfy, Telegram e webhook no PressVibe.
 permalink: /apps/pressvibe/destinos/
 ---
 {% raw %}
@@ -12,6 +12,8 @@ Um destino é um serviço de envio já configurado com as suas credenciais. Voc�
 
 Para gerenciar destinos, abra **Configurações > Destinos**. Ali você cria, edita, duplica e exclui. Os campos de credencial aparecem mascarados, com a opção **Mostrar**. Ao excluir um destino em uso, o app avisa quais botões perdem notificações.
 
+![Lista de destinos com Pushover família, ntfy família e Telegram família, cada um com o serviço embaixo do nome](/assets/img/pressvibe/destinos-lista.jpg){: style="width:100%;max-width:280px"}
+
 Depois de preencher as credenciais, use sempre **Enviar teste**. Ele dispara a mensagem "Mensagem de teste do PressVibe" e mostra o resultado na hora.
 
 ## Qual serviço escolher
@@ -21,8 +23,6 @@ Depois de preencher as credenciais, use sempre **Enviar teste**. Ele dispara a m
 | Pushover | App pago após o período de teste | Sim, 5 níveis | Sim, na prioridade Emergência |
 | ntfy | Gratuito | Sim, 5 níveis | Sim, se o receptor liberar |
 | Telegram | Gratuito | Não | Não |
-| Pushbullet | Gratuito | Não | Não |
-| Simplepush | Gratuito com limites | Não | Não |
 | Webhook | Depende do sistema de destino | Não | Depende do sistema |
 
 Para alertas de emergência, prefira o Pushover ou o ntfy. São os únicos com prioridade, o que permite o alerta tocar com o celular de quem recebe no silencioso.
@@ -36,6 +36,8 @@ O Pushover tem o recurso mais forte para emergência: a prioridade Emergência r
 3. Em [pushover.net/apps/build](https://pushover.net/apps/build), crie uma aplicação com o nome PressVibe. O site mostra o **API Token** dela.
 4. No PressVibe, crie o destino do tipo Pushover e preencha **App Token** e **User Key**.
 
+![Tela Editar destino do Pushover, com os campos App Token e User Key mascarados e a opção Mostrar](/assets/img/pressvibe/destino-pushover.jpg){: style="width:100%;max-width:280px"}
+
 Para avisar várias pessoas de uma vez, crie um grupo de entrega no Pushover e use a chave do grupo no lugar da User Key.
 
 Para o alerta de prioridade Alta ou Emergência tocar com o celular no silencioso, no vibrar ou no Não perturbe, quem recebe precisa ajustar o app Pushover. O passo a passo está em [Pushover tocando no silencioso](../pushover-silencioso/).
@@ -48,6 +50,8 @@ O ntfy é gratuito e não pede cadastro. As mensagens vão para um tópico, e qu
 2. No PressVibe, crie o destino do tipo ntfy. A **URL do servidor** já vem com `https://ntfy.sh`.
 3. Preencha o **Tópico** com o mesmo nome.
 4. Se você usa servidor próprio, troque a URL. Se o tópico exige login, preencha o **Token de acesso**.
+
+![Tela Editar destino do ntfy, com nome, URL do servidor https://ntfy.sh, tópico e token de acesso opcional](/assets/img/pressvibe/destino-ntfy.jpg){: style="width:100%;max-width:280px"}
 
 Para o alerta de prioridade Emergência tocar com o celular no silencioso, no vibrar ou no Não perturbe, quem recebe precisa ajustar o app ntfy. O passo a passo está em [ntfy tocando no silencioso](../ntfy-silencioso/).
 
@@ -65,22 +69,11 @@ https://api.telegram.org/botTOKEN/getUpdates
 
 4. No PressVibe, crie o destino do tipo Telegram e preencha **Token do bot** e **Chat ID**.
 
+![Tela Editar destino do Telegram, com o token do bot mascarado e o Chat ID](/assets/img/pressvibe/destino-telegram.jpg){: style="width:100%;max-width:280px"}
+
 Para avisar um grupo, adicione o bot ao grupo e mande uma mensagem lá. O Chat ID de um grupo começa com o sinal de menos.
 
 O passo a passo completo, com exemplos, erros comuns e o envio para grupos, está em [Criar o bot do Telegram](../telegram-bot/).
-
-## Pushbullet
-
-1. Entre em [pushbullet.com](https://www.pushbullet.com) com a conta de quem vai receber.
-2. Em **Settings > Account**, toque em **Create Access Token** e copie o token.
-3. No PressVibe, crie o destino do tipo Pushbullet e preencha o **Access Token**.
-
-A mensagem chega em todos os aparelhos ligados àquela conta do Pushbullet.
-
-## Simplepush
-
-1. Quem vai receber instala o app Simplepush. A chave aparece na tela inicial do app.
-2. No PressVibe, crie o destino do tipo Simplepush e preencha a **Chave**.
 
 ## Webhook customizado
 
@@ -92,6 +85,14 @@ O webhook envia uma requisição HTTP para qualquer sistema que aceite JSON, com
 | Método HTTP | `POST` ou `PUT` |
 | Cabeçalhos | Um por linha, no formato `Nome: valor` |
 | Corpo JSON | Modelo do corpo, com macros |
+
+![Tela Novo destino do tipo Webhook customizado, com URL, método POST ou PUT, cabeçalhos e corpo JSON](/assets/img/pressvibe/destino-webhook.jpg){: style="width:100%;max-width:280px"}
+
+O corpo já vem com um modelo que manda o título e a mensagem:
+
+```json
+{"title": "{{title}}", "message": "{{message}}"}
+```
 
 O corpo aceita todas as [macros](../macros/), mais `{{title}}` e `{{message}}`, que recebem o título e a mensagem da notificação já resolvidos. O app escapa os valores para o JSON continuar válido. Qualquer resposta HTTP 2xx conta como sucesso.
 

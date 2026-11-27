@@ -75,6 +75,8 @@ Exemplo do trecho:
 3. Dê um nome fácil, por exemplo "Telegram da Maria".
 4. Toque em **Enviar teste**. A mensagem "Mensagem de teste do PressVibe" deve chegar na conversa com o bot.
 
+![Tela Editar destino do Telegram, com o token do bot mascarado e o Chat ID](/assets/img/pressvibe/destino-telegram.jpg){: style="width:100%;max-width:280px"}
+
 ## Avisar um grupo
 
 O mesmo bot manda mensagens para um grupo inteiro.
