@@ -17,7 +17,7 @@ Você vai precisar de duas informações: o **token do bot**, que identifica o b
 2. Toque em **Iniciar** e mande `/newbot`.
 3. O BotFather pede o **nome** do bot. É o nome que aparece nas mensagens, por exemplo `PressVibe Alex`.
 4. Depois ele pede o **username**. Ele precisa ser único no Telegram e terminar em `bot`, por exemplo `alex_pressvibe_bot`. Se o nome já existir, tente outro.
-5. No fim, o BotFather manda uma mensagem com o **token**, no formato `123456789:ABCdefGhIJKlmnOPQrstUVwxyz`. Copie o token inteiro.
+5. No fim, o BotFather manda uma mensagem com o **token**, no formato `123456789:ABCdefGhIJKlmnOPQrstUVwxyz`. Copie o token inteiro, com os números, os dois pontos e as letras.
 
 Trate o token como uma senha. Quem tiver o token consegue mandar mensagens em nome do seu bot. Não publique em grupos, prints ou repositórios. Se ele vazar, mande `/revoke` para o BotFather, escolha o bot e use o token novo no PressVibe.
 
@@ -32,12 +32,21 @@ Faça isso no celular de cada pessoa que vai receber. Cada uma terá o seu próp
 
 ## 3. Descobrir o Chat ID
 
-1. Depois do `/start`, abra no navegador o endereço abaixo, trocando `TOKEN` pelo token do bot. Mantenha a palavra `bot` colada antes do token.
+O endereço da API do Telegram não usa o nome nem o username do bot. O token já identifica o bot. O endereço é formado assim: `https://api.telegram.org/bot`, seguido do token colado, seguido de `/getUpdates`.
+
+Com o token de exemplo `123456789:ABCdefGhIJKlmnOPQrstUVwxyz`, o endereço fica:
 
 ```
-https://api.telegram.org/botTOKEN/getUpdates
+https://api.telegram.org/bot123456789:ABCdefGhIJKlmnOPQrstUVwxyz/getUpdates
 ```
 
+Confira três pontos ao montar o seu:
+
+- a palavra `bot` fica colada no token, sem espaço, barra ou outro caractere entre eles
+- o token entra sem os sinais `<` e `>` e sem a palavra `TOKEN`
+- o token está inteiro, com os dois pontos
+
+1. Depois do `/start`, abra o seu endereço no navegador.
 2. A página mostra um texto em JSON. Procure o trecho `"chat":{"id":` e copie o número que vem logo depois. Esse é o Chat ID.
 
 Exemplo do trecho:
@@ -50,9 +59,14 @@ Exemplo do trecho:
 }
 ```
 
-Se a página mostrar só `{"ok":true,"result":[]}`, a lista está vazia. Mande outra mensagem para o bot e recarregue a página. O Telegram guarda essas mensagens por até 24 horas.
+### Se não aparecer o Chat ID
 
-Se aparecer `{"ok":false,"error_code":401}`, o token está errado ou incompleto. Copie de novo do BotFather.
+| O que a página mostra | Causa | Como resolver |
+|---|---|---|
+| `{"ok":true,"result":[]}` | Nenhuma mensagem nova para o bot | Mande `/start` ou outra mensagem para o bot e recarregue a página. O Telegram guarda essas mensagens por até 24 horas |
+| `{"ok":false,"error_code":401,...}` | Token errado ou incompleto | Copie o token de novo do BotFather e confira os três pontos acima |
+| `{"ok":false,"error_code":404,...}` | Endereço mal montado | Confira se a palavra `bot` está colada no token e se o final é `/getUpdates` |
+| `{"ok":false,"error_code":409,...}` | O bot tem um webhook ativo, e o `getUpdates` não funciona com webhook | Abra `https://api.telegram.org/botTOKEN/deleteWebhook` com o seu token e tente o `getUpdates` de novo |
 
 ## 4. Cadastrar o destino no PressVibe
 
